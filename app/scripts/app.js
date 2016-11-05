@@ -36,6 +36,10 @@ angular
                 templateUrl: 'scripts/jobs/jobdetail.html',
                 controller: 'JobDetailCtrl'
             })
+            .when('/applicant/:id', {
+                templateUrl: 'scripts/applicant/applicant.html',
+                controller: 'ApplicantDetailCtrl'
+            })
             .when('/configuration', {
                 templateUrl: 'scripts/configuration/configuration.html',
                 controller: 'ConfigureCtrl',

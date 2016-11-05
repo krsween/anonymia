@@ -42,6 +42,15 @@ angular.module('anonymiaApp')
             },
             getConfig: function() {
                 return cache;
+            },
+            getHiddenFields: function() {
+                var hidden = [];
+                for (var key in cache) {
+                    if (cache[key].hidden) {
+                        hidden.push(cache[key].value);
+                    }
+                }
+                return hidden;
             }
         };
     });

@@ -7,6 +7,7 @@ angular.module('anonymiaApp')
                         name: 'Jane Doe',
                         skills: ['Java', 'UX', 'Fullstack', 'SQL'],
                         experience: 5,
+                        address: '123 Housewell Lane, Burbank, CA - 90639, USA.',
                         location: {
                             address: {
                                 streetOne: '123 Housewell Lane',
@@ -25,6 +26,7 @@ angular.module('anonymiaApp')
                         name: 'John Smith',
                         skills: ['Java', 'Fullstack'],
                         experience: 3,
+                        address: '123 Housewell Lane, Burbank, CA - 90639, USA.',
                         location: {
                             address: {
                                 streetOne: '123 Housewell Lane',
@@ -43,6 +45,7 @@ angular.module('anonymiaApp')
                         name: 'Linda Taylor',
                         skills: ['Javascript', 'UX', 'Fullstack'],
                         experience: 2,
+                        address: '123 Housewell Lane, Burbank, CA - 90639, USA.',
                         location: {
                             address: {
                                 streetOne: '123 Housewell Lane',
@@ -61,6 +64,7 @@ angular.module('anonymiaApp')
                         name: 'Arthur Dent',
                         skills: ['UX', 'Photoshop'],
                         experience: 2,
+                        address: '123 Housewell Lane, Burbank, CA - 90639, USA.',
                         location: {
                             address: {
                                 streetOne: '123 Housewell Lane',

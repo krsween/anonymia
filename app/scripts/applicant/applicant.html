@@ -1,0 +1,7 @@
+<h1>Applicant #{{id}} </h1>
+
+<div class="name" ng-if="show('name')">Name: {{applicant.name}}</div>
+<div class="skills" ng-if="show('skills')">Skills: {{applicant.skills.join(', ')}}</div>
+<div class="experience" ng-if="show('experience')">Experience: {{applicant.experience}} years</div>
+<div class="address" ng-if="show('address')">Address: {{applicant.address}}</div>
+<div class="certifications" ng-if="show('certifications')">Certifications: {{applicant.certifications.join(', ')}}</div>

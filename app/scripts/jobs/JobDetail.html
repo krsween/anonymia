@@ -2,7 +2,7 @@
 <h2>Applications</h2>
 <ul class="applicants-list">
     <li ng-repeat="applicant in applicants">
-        <div class="id">Applicant #{{applicant.id}}</div>
+        <div class="id"><a href="#/applicant/{{applicant.id}}">Applicant #{{applicant.id}}</a></div>
         <div class="skills">Skills: {{applicant.skills}}</div>
     </li>
 </ul>
