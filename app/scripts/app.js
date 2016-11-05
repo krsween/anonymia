@@ -26,13 +26,11 @@ angular
             })
             .when('/about', {
                 templateUrl: 'scripts/about/about.html',
-                controller: 'AboutCtrl',
-                controllerAs: 'about'
+                controller: 'AboutCtrl'
             })
             .when('/jobs', {
                 templateUrl: 'scripts/jobs/jobs.html',
-                controller: 'JobCtrl',
-                controllerAs: 'jobs'
+                controller: 'JobsCtrl'
             })
             .otherwise({
                 redirectTo: '/'

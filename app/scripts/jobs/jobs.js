@@ -8,6 +8,6 @@
  * Controller of the anonymiaApp
  */
 angular.module('anonymiaApp')
-    .controller('JobsCtrl', function () {
-
+    .controller('JobsCtrl', function ($scope, jobsFactory) {
+        $scope.jobs = jobsFactory.get();
     });
