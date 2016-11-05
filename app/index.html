@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
@@ -12,81 +12,84 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- endbuild -->
-  </head>
-  <body ng-app="anonymiaApp">
-    <!--[if lte IE 8]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-    <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-            <a class="navbar-brand" href="#/">anonymia</a>
-          </div>
-
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
-
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
+</head>
+<body ng-app="anonymiaApp">
+<!--[if lte IE 8]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<nav class="navbar navbar-default" role="navigation">
     <div class="container">
-    <div ng-view=""></div>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#/">
+                <svg width="150px" height="50px" viewBox="505 424 150 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+                    <desc>Created with Sketch.</desc>
+                    <defs></defs>
+                    <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(505.000000, 424.000000)">
+                        <rect id="Rectangle" fill="#D0011B" x="0" y="0" width="150" height="50"></rect>
+                        <text id="cloaque" font-family="Avenir-Light, Avenir" font-size="21" font-weight="300" fill="#FFFFFF">
+                            <tspan x="38" y="32">cloaque</tspan>
+                        </text>
+                    </g>
+                </svg>
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="js-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#/">Home</a></li>
+                <li><a ng-href="#/about">About</a></li>
+            </ul>
+        </div>
     </div>
+</nav>
 
-    <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
+<div ng-view=""></div>
+
+<footer class="container">
+    <div class="col-xs-12">
+        Made with
     </div>
+</footer>
 
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+<script>
+    !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+            (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+        r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+    }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+</script>
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <!-- endbuild -->
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/main/main.js"></script>
+<script src="scripts/about/about.js"></script>
+<!-- endbuild -->
 </body>
 </html>
