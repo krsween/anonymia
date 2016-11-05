@@ -1,0 +1,8 @@
+<h1>Job #{{id}} - {{job.name}}</h1>
+<h2>Applications</h2>
+<ul class="applicants-list">
+    <li ng-repeat="applicant in applicants">
+        <div class="id">Applicant #{{applicant.id}}</div>
+        <div class="skills">Skills: {{applicant.skills}}</div>
+    </li>
+</ul>
