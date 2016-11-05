@@ -1,5 +1,70 @@
 <section class="container">
-    <div class="col-xs-12">
-        <pre>{{ jobs | json }}</pre>
+    <div class="row">
+        <!-- PROFILE -->
+        <div class="hidden-xs col-md-2 profile-column text-center">
+            <img class="img-circle" src="../../images/profile.jpg"  />
+            <div class="clearfix">&nbsp;</div>
+            <p><strong>Justin Timberlake</strong></p>
+            <p>
+                <a href="https://twitter.com/jtimberlake" target="_blank">
+                    <i class="fa fa-twitter"></i> &nbsp; @jtimberlake
+                </a>
+            </p>
+            <p>
+                <a href="https://twitter.com/jtimberlake" target="_blank">
+                    <i class="fa fa-facebook"></i> &nbsp; justin.timberlake
+                </a>
+            </p>
+            <p>
+                <a href="https://twitter.com/jtimberlake" target="_blank">
+                    <i class="fa fa-linkedin"></i> &nbsp; justin.timberlake
+                </a>
+            </p>
+        </div>
+        <!-- JOBS -->
+        <div class="col-xs-12 col-md-7">
+            <h2>My Jobs</h2>
+            <hr>
+            <div ng-repeat="job in jobs" class="job-row">
+                <h3><a ng-href="#/jobs/{{ job.id }}">{{ job.name }}</a></h3>
+                <p>{{ job.description }}</p>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <a href="#">{{ job.company }}</a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                        <a href="#">{{ job.location.address.city }}, {{ job.location.address.state }}</a>
+                    </div>
+                    <div class="col-xs-4 text-right text-muted">
+                        <i class="fa fa-calendar"></i> &nbsp; {{ job.dateAdded }}
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </div>
+        <!-- FILTERS -->
+        <div class="hidden-xs col-md-3">
+            <h3>Filters</h3>
+            <div class="well well-sm">
+                <p><strong>Experience</strong></p>
+                <ul class="list-unstyled">
+                    <li ng-repeat="exp in experience"><input type="checkbox"/> {{ exp }}</li>
+                </ul>
+                <hr>
+                <p><strong>Dates</strong></p>
+                <ul class="list-unstyled">
+                    <li ng-repeat="date in dates"><input type="checkbox"/> {{ date }}</li>
+                </ul>
+                <hr>
+                <p><strong>Company</strong></p>
+                <ul class="list-unstyled">
+                    <li ng-repeat="company in companies"><input type="checkbox"/> {{ company }}</li>
+                </ul>
+                <hr>
+                <button class="btn btn-sm btn-primary btn-block text-center">
+                    Update Filters
+                </button>
+            </div>
+        </div>
     </div>
 </section>
