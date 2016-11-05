@@ -10,6 +10,6 @@
 angular.module('anonymiaApp')
     .controller('JobDetailCtrl', [ '$routeParams', '$scope', 'jobsFactory', 'applicantsFactory', function ($routeParams, $scope, jobsFactory, applicantsFactory) {
             $scope.id = $routeParams.id;
-            $scope.job = jobsFactory.getById($scope.id);
-            $scope.applicants = applicantsFactory.get();
+            $scope.job = jobsFactory.get($scope.id);
+            $scope.applicants = applicantsFactory.getForJob($scope.id);
     }]);

@@ -3,6 +3,6 @@
 <ul class="applicants-list">
     <li ng-repeat="applicant in applicants">
         <div class="id"><a href="#/applicant/{{applicant.id}}">Applicant #{{applicant.id}}</a></div>
-        <div class="skills">Skills: {{applicant.skills}}</div>
+        <div class="skills">Skills: {{applicant.skills.join(', ')}}</div>
     </li>
 </ul>
