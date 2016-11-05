@@ -1,7 +1,14 @@
-<h1>Applicant #{{id}} </h1>
-
-<div class="name" ng-if="show('name')">Name: {{applicant.name}}</div>
-<div class="skills" ng-if="show('skills')">Skills: {{applicant.skills.join(', ')}}</div>
-<div class="experience" ng-if="show('experience')">Experience: {{applicant.experience}} years</div>
-<div class="address" ng-if="show('address')">Address: {{applicant.address}}</div>
-<div class="certifications" ng-if="show('certifications')">Certifications: {{applicant.certifications.join(', ')}}</div>
+<section class="container">
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <h1>Applicant #{{ id }} </h1>
+            <div class="name" ng-if="show('name')"><strong>Name:</strong> {{ applicant.name }}</div>
+            <div class="gender" ng-if="show('gender')"><strong>Gender:</strong> {{ applicant.gender }}</div>
+            <div class="skills" ng-if="show('skills')"><strong>Skills:</strong> {{ applicant.skills.join(', ') }}</div>
+            <div class="experience" ng-if="show('experience')"><strong>Experience:</strong> {{ applicant.experience }} years</div>
+            <div class="address" ng-if="show('address')"><strong>Address:</strong> {{ applicant.address }}</div>
+            <div class="certifications" ng-if="show('certifications')"><strong>Certifications:</strong> {{ applicant.certifications.join(', ') }}</div>
+        </div>
+    </div>
+</section>
+<div class="clearfix">&nbsp;</div>

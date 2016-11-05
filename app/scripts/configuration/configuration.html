@@ -1,11 +1,21 @@
 <section class="container">
-    <h2> Configure hidden fields </h2>
-    <p> Choose fields you want to hide from your hiring managers </p>
-    <ul>
-        <li ng-repeat="item in configList">
-            <input type="checkbox" ng-model="item.hidden" value="item.hidden" />
-            <label>{{ item.label }}</label>
-        </li>
-    </ul>
-    <button ng-click="save()" class="save-button">Save</button>
+    <div class="row">
+        <div class="col-xs-4">
+            <h2> Configure hidden fields </h2>
+            <p> Choose fields you want to hide from your hiring managers </p>
+            <ul class="list-unstyled">
+                <li ng-repeat="item in configList">
+                    <input type="checkbox" ng-model="item.hidden" value="item.hidden" />
+                    <label>{{ item.label }}</label>
+                </li>
+            </ul>
+            <button ng-click="save()" class="save-button btn btn-primary btn-block">Save</button>
+        </div>
+        <div class="col-xs-8">
+            <div class="well">
+                <h3>Need help?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet vestibulum nisi, nec porttitor arcu lacinia at. Aenean eu nisi rhoncus, fringilla sem ultricies, tempus massa. Duis gravida mollis magna nec euismod. Praesent convallis, mauris sed ullamcorper ultricies, neque dui faucibus augue, quis sagittis mi neque sit amet enim. Nunc quis ex odio. Proin ornare finibus leo vel pellentesque. Donec lectus eros, tempus et aliquet id, vehicula in felis. Praesent vitae tristique mauris. Praesent dictum ligula pretium, gravida est facilisis, rutrum arcu. Maecenas in risus vitae urna pharetra volutpat sit amet id odio. Nam felis erat, dapibus eu posuere fermentum, ultrices quis leo. Aenean eget enim ut risus pharetra pulvinar. Vestibulum id tellus eget nunc condimentum tincidunt. Vestibulum rutrum mauris vel est pharetra eleifend. Suspendisse elementum fringilla augue, at porttitor neque lobortis ut. Aliquam eros quam, pellentesque eget ligula quis, lacinia iaculis sem.</p>
+            </div>
+        </div>
+    </div>
 </section>
