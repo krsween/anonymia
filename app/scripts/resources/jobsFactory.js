@@ -2,9 +2,7 @@
 
 angular.module('anonymiaApp')
     .factory('jobsFactory', function () {
-        return {
-            get: function () {
-                return [
+        var data =   [
                     {
                         id: '1',
                         name: 'Senior Developer',
@@ -86,6 +84,14 @@ angular.module('anonymiaApp')
                         }
                     }
                 ];
+        return {
+            get: function () {
+                return data;
+            },
+            getById: function(id) {
+                return data.find(function(item) {
+                    return item.id == id;
+                });
             }
         };
     });

@@ -32,6 +32,15 @@ angular
                 templateUrl: 'scripts/jobs/jobs.html',
                 controller: 'JobsCtrl'
             })
+            .when('/jobs/:id', {
+                templateUrl: 'scripts/jobs/jobdetail.html',
+                controller: 'JobDetailCtrl'
+            })
+            .when('/configuration', {
+                templateUrl: 'scripts/configuration/configuration.html',
+                controller: 'ConfigureCtrl',
+                controllerAs: 'configure'
+            })
             .otherwise({
                 redirectTo: '/'
             });

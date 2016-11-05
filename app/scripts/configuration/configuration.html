@@ -1,0 +1,11 @@
+<section class="container">
+    <h2> Configure hidden fields </h2>
+    <p> Choose fields you want to hide from your hiring managers </p>
+    <ul>
+        <li ng-repeat="item in configList">
+            <input type="checkbox" ng-model="item.hidden" value="item.hidden" />
+            <label>{{ item.label }}</label>
+        </li>
+    </ul>
+    <button ng-click="save()" class="save-button">Save</button>
+</section>
